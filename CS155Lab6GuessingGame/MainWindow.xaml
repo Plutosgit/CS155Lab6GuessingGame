@@ -1,0 +1,18 @@
+﻿<Window x:Class="CS155Lab6GuessingGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CS155Lab6GuessingGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblTitle" Content="Guessing game! See if you can match what I guessed!" HorizontalAlignment="Left" Height="31" Margin="222,25,0,0" VerticalAlignment="Top" Width="319"/>
+        <Label x:Name="lblUserInput" Content="Please enter a valid guess (0-100 inclusive)" HorizontalAlignment="Left" Height="28" Margin="222,133,0,0" VerticalAlignment="Top" Width="239"/>
+        <TextBox x:Name="txtUsersGuess" HorizontalAlignment="Left" Height="28" Margin="461,136,0,0" Text="Guess" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" GotFocus="txtUsersGuess_GotFocus" TextChanged="txtUsersGuess_TextChanged"/>
+        <Label x:Name="lblComputersGuess" Content="I have guessed a number! Now, it's your turn.." HorizontalAlignment="Left" Height="29" Margin="222,75,0,0" VerticalAlignment="Top" Width="291"/>
+        <Button x:Name="cmdGuessCheck" Content="Check guess now" HorizontalAlignment="Left" Height="26" Margin="302,189,0,0" VerticalAlignment="Top" Width="131" Click="cmdGuessCheck_OnClick" IsDefault="True"/>
+        <Label x:Name="lblResult" Content="-" HorizontalAlignment="Left" Height="29" Margin="222,245,0,0" VerticalAlignment="Top" Width="291"/>
+
+    </Grid>
+</Window>
